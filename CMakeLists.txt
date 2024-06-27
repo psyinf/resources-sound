@@ -1,9 +1,9 @@
-project(sound_data)
-
+project(resources-sound)
+set(INSTALL_PATH "." CACHE STRING "destination directory for the resources")
 install(DIRECTORY
 		data
 	DESTINATION
-		bin
+		${INSTALL_PATH}
 	COMPONENT
 		${RUNTIME_COMPONENT}
 )
